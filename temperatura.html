@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="./style.css"/>
+        <link rel="stylesheet" type="text/css" href="./grid.css"/>
+        <title>Conversor DEV</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <h1>CONVERSOR DEV</h1>
+                <p>Uma ferramenta para facilitar seu dia a dia!</p>
+            </div>
+        </header>
+
+        <section id="mainContent">
+            <div class="container">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="./index.html">Moedas</a></li>
+                        <li><a href="./bitcoins.html">Bitcoins</a></li>
+                        <li><a href="./anosluz.html">Anos Luz</a></li>
+                        <li id="currentPage"><a href="./temperatura.html">Temperatura</a></li>
+                    </ul>
+                </nav>
+                
+                <form>
+                    <div class="formTopic">
+                        <label for="moedaInicial">Moeda Inicial</label>
+                        <select name="moedaInicial" id="moedaInicial">
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="real">Real</option>
+                            <option value="dolar">Dolar</option>
+                            <option value="euro">Euro</option>
+                        </select>
+                    </div>
+
+                    <div class="formTopic">
+                        <label for="valorInicial">Valor</label>
+                        <input type="number" name="valorInicial" id="valorInicial" placeholder="Digite o valor a ser convertido">
+                    </div>
+                    
+                    <div class="formTopic">
+                        <label for="converterPara">Converter para</label>
+                        <select name="converterPara" id="converterPara">
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="real">Real</option>
+                            <option value="dolar">Dolar</option>
+                            <option value="euro">Euro</option>
+                        </select>
+                    </div>
+
+                    <div class="formTopic">
+                        <button type="submit" onclick="moneyCov.mul()">CONVERTER</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <script type="text/javascript" src="./script.js"></script>
+    </body>
+</html>

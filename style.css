@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #090727;
+}
+
+header{
+    background: url(./imagens/headerbg.jpg);
+    background-size: cover;
+    height: 450px;
+    padding-top: 147px;
+}
+
+header .container{
+    border-bottom: 1px solid #37FFAB;
+}
+
+header .container h1{
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 97.52px;
+    color: #F8F8F8;
+    text-align: center;
+}
+
+header .container p{
+    color: #070823;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.26px;
+    text-align: center;
+
+    background-color: #37FFAB;
+    padding: 8px 32px;
+    width: 100%;
+    max-width: 592px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 94px;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F6ECEC;
+
+    width: 176px;
+    height: 55px;
+    border-radius: 19px 19px 0px 0px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #090727;
+}
+
+.menu ul li:hover{
+    transform: scale(1.01);
+    background-color: #EFE2E2;
+}
+
+.menu ul li#currentPage{
+    background-color: #37FFAB;
+}
+
+.container form{
+    display: flex;
+    gap: 32px;
+    margin-top: 60px;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.container form input, select{
+    display: block;
+}
+
+.container form label{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.94px;
+}
+
+.container form select{
+    width: 176px;
+    height: 56px;
+
+    background: rgba(248, 248, 248, 0.3);
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    border-radius: 7px;
+    padding: 13px;
+    margin-top: 8px;
+}
+
+.container form input[type="number"]{
+    width: 383px;
+    height: 56px;
+
+    background: rgba(248, 248, 248, 0.3);
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    border-radius: 7px;
+    padding: 13px;
+    margin-top: 8px;
+}
+
+.container button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #090727;
+    
+    width: 176px;
+    height: 56px;
+
+    background: #37FFAB;
+    border-radius: 7px;
+    cursor: pointer;
+    border: none;
+}
+
+.container button:hover{
+    transform: scale(1.05);
+}
+
+
